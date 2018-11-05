@@ -2,6 +2,8 @@
 
 Segunda e terceira versão do site estático do Hotel Plaza Canela
 
+http://hotelplazacanela.com
+
 **Recursos**
 
  - Única página estática

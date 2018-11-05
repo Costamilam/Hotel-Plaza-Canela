@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plaza Canela Brasil</title>
+        <meta charset="utf-8">
+        
+        <!-- Social icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Import Google Icon Font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Import materialize css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <!-- Let browser know website is optimized for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            body {
+                background-image: url('./images/plaza_canela_hotel_2.png');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: bottom;
+            }
+            .nav-wrapper a i {
+                font-family: "Arial";
+                font-style: normal;
+            }
+            .nav-wrapper a i strong, .collapsible-header, h2, h4, h5 {
+                color: #d3ad80;
+                font-weight: 900;
+            }
+            .row {
+                margin-bottom: 0;
+            }
+            .row .col {
+                padding: 0;
+            }
+            .bloco_branco {
+                background-color: #fff;
+                margin: 0;
+                padding: 150px 0;
+            }
+            nav, .bloco_preto {
+                background-color: #3b4246;
+                margin: 0;
+                padding: 150px 0;
+            }
+            .navbar-fixed nav {
+                padding: 0 50px;
+            }
+            .slider .indicators .indicator-item.active {
+                background-color: black;
+            }
+            .slider .indicators .indicator-item {
+                background-color: silver;
+            }
+            .slider .slides {
+                background-color: white;
+            }
+            .img_inherit {
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+            }
+            footer {
+                margin-bottom: 350px;
+            }
+            .page-footer {
+                background-color: #3b4246;
+            }
+            .fa {
+                padding: 5%;
+                font-size: 30px;
+                color: #d3ad80;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).scroll(function(){
+                $('a[href^="#"]').on('click',function (e) {
+                    e.preventDefault();
+
+                    var target = this.hash;
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing');
+                });
+            });
+
+            $(document).ready(function(){
+                $('.slider').slider();
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Import jQuery before materialize.js -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="./index.html"><i class='valign-wrapper left'>
+                        <img height='64px' src='./images/logo_plaza_canela.png' alt=''>Plaza Canela
+                    </i></a>
+
+                    <a href="http://commandinvest.com"><i class='valign-wrapper hide-on-med-and-down right'>
+                        <img height='45px' src='./images/logo_commandinvest.png' alt=''>
+                        COMMAND<strong class='invest'>INVEST</strong>
+                    </i></a>
+                </div>
+            </nav>
+        </div>
+
+        <div class='row'>
+            <div id="container" class="col s12">
+                <div class="bloco_branco" style='padding: 0;'>
+                    <div class='slider container' style='width: 70%'>
+                        <ul class="slides">
+                            <li>
+                                <img src="./images/logo_plaza_canela.png">
+                                <div class="caption center-align">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./images/plaza_canela_hotel.jpg">
+                                <div class="caption right-align">
+                                    <h3 class='white-text'>O primeiro hotel da rede plaza<br>na serra gaúcha</h3>
+                                    <h5 class="light white-text">Invista numa marca sólida<br>com garantia de retorno.</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./images/local_plaza_canela.png">
+                                <div class="caption left-align">
+                                    <h3 class='black-text'>Ótima localização</h3>
+                                    <h5 class="light black-text">A região de Canela é um dos maiores<br>pontos turísticos no sul do país.</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src='./images/investidor.jpg'>
+                                <div class="caption right-align">
+                                    <h3 class='black-text'>Invista com segurança</h3>
+                                    <h5 class="light black-text">O condo-hotel é a melhor e mais segura forma<br> de você garantir seu futuro.</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col s12 center'>
+                <div class='bloco_branco'>
+                     <div id="container" class="container">
+                        <h2>O Maior Lançamento da Serra Gaúcha</h2>
+
+                        <p style='font-size: 1.3em;'>Localiza-se na Serra Gaúcha, mais precisamente na Região das Hortênsias, faz divisa com as cidades de Gramado, São Francisco de Paula, Caxias do Sul e Três Coroas. A cidade é conhecida por atrações turísticas como a Cascata do Caracol, o Parque da Ferradura e a Catedral de Pedra. Um dos mais importantes destinos turísticos do Rio Grande do Sul.</p>
+                        <video width="50%" height="auto" controls="controls">
+                            <source src="video.mp4" type="video/mp4">
+                            <object data="" width="50%" height="auto">
+                                <embed width="50%" height="auto" src="video.mp4">
+                            </object>
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col s12' style='padding: 0'>
+                <div class='bloco bloco_preto'>
+                    <div id="container" class="container">
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">airplanemode_active</i>Turismo</div>
+                                <div class="collapsible-body white">
+                                    <p>Um dos mais importantes destinos turísticos do Rio Grande do Sul.</p>
+                                    <p>1° Lugar estre os 25 destinos mais procurados no site Trivago, em 2017.</p>
+                                    <p>Estadia média de 4,57 dias. Justificadas pelos atrativos, belezas naturais e excelentes hotéis da região.</p>
+                                    <p>Ocupação de 95% da rede hoteleira no mês Dezembro de 2016.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">business</i>Empreendimento</div>
+                                <div class="collapsible-body white">
+                                    <p>Design moderno, praça de entrada imponente e uma fachada que se destaca. Proporcionar tranquilidade e conforto para o dia a dia com infraestrutura completa. Espaços muito bem planejados, funcionais e confortáveis para viver, passear e desfrutar no melhor ponto da serra gaúcha.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">show_chart</i>Rendimentos</div>
+                                <div class="collapsible-body white">
+                                    <p>O nosso modelo de Condo-Hotel apresenta-se como uma modalidade de investimento segura e confortável, isso porquê, uma vez adquirida a unidade, o proprietário não precisa preocupar-se com vacância, reformas, contratos e outras incumbências administrativas.</p>
+                                    <p>A segurança do mercado imbiliário aliada a rentabilidade do mecado do turismo em um único investimento.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col s12'>
+                <div class='bloco_branco'>
+                    <div id="container" class="container">
+                        <img class='img_inherit' src='./images/organograma.png' alt='Organograma do investimento'>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col s12 center'>
+                <div class='bloco_branco'>
+                    <div id="container" class="container">
+                        <h4>Porque investir na rede hoteleira<br>administrada pela bandeira Plaza?</h4>
+                        <img class='img_inherit' src='./images/vantagens.png' alt='vantagens de investir no Plaza Canela'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row" style='padding: 50px 0'>
+                <div class="col l5 m5 s12">
+                    <div class='col s8 offset-s2'>
+                        <img style='' class='img_inherit' src='./images/logo_commandinvest_branco.png' alt='Logo CommandInvest'>
+                    </div>
+                    <div class='col s12'>
+                        <p class="grey-text text-lighten-4">A CommandInvest foi fundada com o propósito de ser uma empresa de referência em imóveis de alto padrão e que geram renda, oferecendo oportunidades de transformação e rentabilidade.<br>Estamos presentes em diversas cidades, tais como Porto Alegre, São Paulo, Rio de Janeiro, Punta del Este, Miami e Nova York.</p>
+                    </div>
+                </div>
+                <div class="col l5 offset-l2 m6 offset-m1 s12 center valign-wrapper">
+                    <div>
+                    <h5 class="white-text">Contato</h5>
+                    <p><a style='color: #fff;' href='http://commandinvest.com'>www.commandinvest.com</a></p>
+                    <p>contato@commandinvest.com</p>
+                    <p>(51) 3328.0083 - (51) 98287.0130 - (51) 98264.0200</p>
+                    <p>Av. Carlos Gomes, 700 sala 511 Porto Alegre - RS</p>
+                    
+                    <h5 class="white-text">Redes Sociais</h5>
+                    <p>
+                        <a href="https://pt-br.facebook.com/commandinvest/" target='_blank' class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/commandinvest" target='_blank' class="fa fa-twitter"></a>
+                        <a href="https://join.skype.com/invite/HaomOtLiBGbl" target='_blank' class="fa fa-skype"></a>
+                        <a href="https://www.linkedin.com/company/commandinvestoficial" target='_blank' class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/explore/locations/1630737097173561/commandinvest/" target='_blank' class="fa fa-instagram"></a>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                CommandInvest © 2018. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
